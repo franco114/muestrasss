@@ -30,9 +30,10 @@ RUN /app/venv/bin/python manage.py migrate
 # Recoge los archivos estáticos
 RUN /app/venv/bin/python manage.py collectstatic --noinput
 
-# Expone el puerto 8000
-EXPOSE 8000
+# Expone el puerto 8080
+EXPOSE 8080
 
 # Define el comando de inicio para ejecutar el servidor Gunicorn
-CMD ["/app/venv/bin/gunicorn", "--bind", "0.0.0.0:8000", "proyecto.wsgi:application"]
+CMD ["/app/venv/bin/gunicorn", "--bind", "0.0.0.0:8080", "proyecto.wsgi:application"]
+
 
