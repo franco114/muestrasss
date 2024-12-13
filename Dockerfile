@@ -2,9 +2,10 @@
 FROM python:3.10-slim
 
 # Instala las dependencias del sistema
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && \
+    apt-get install -y \
     gcc \
-    libpq-dev \  # Esta línea instala libpq-dev
+    libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Establece el directorio de trabajo en el contenedor
@@ -34,3 +35,4 @@ EXPOSE 8000
 
 # Define el comando de inicio para ejecutar el servidor Gunicorn
 CMD ["/app/venv/bin/gunicorn", "--bind", "0.0.0.0:8000", "proyecto.wsgi:application"]
+
