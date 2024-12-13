@@ -30,7 +30,13 @@ SECRET_KEY = 'django-insecure-d!rpp&q95cea^lyr@0x-qrrrj6wq2f7l-vrhf9qga%6&fuf$)#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['muestreo1-60zl5v93.b4a.run', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'muestreo1-60zl5v93.b4a.run',
+    'localhost',
+    '127.0.0.1',
+    'node293a.containers.back4app.com'
+]
+
 
 
 
