@@ -29,6 +29,16 @@ SECRET_KEY = 'django-insecure-d!rpp&q95cea^lyr@0x-qrrrj6wq2f7l-vrhf9qga%6&fuf$)#
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+DEBUG = False
+
+# Configuraciones de seguridad adicionales
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+X_FRAME_OPTIONS = 'DENY'
 
 ALLOWED_HOSTS = [
     'muestreo1-60zl5v93.b4a.run',
