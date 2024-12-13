@@ -28,7 +28,7 @@ LOGIN_URL = "/login/"
 SECRET_KEY = 'django-insecure-d!rpp&q95cea^lyr@0x-qrrrj6wq2f7l-vrhf9qga%6&fuf$)#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 DEBUG = False
 
 # Configuraciones de seguridad adicionales
