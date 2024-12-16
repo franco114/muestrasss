@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/usuario/repositorio.git']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/tu-proyecto/imagen', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/tu-proyecto/imagen']
+images:
+- 'gcr.io/tu-proyecto/imagen'
