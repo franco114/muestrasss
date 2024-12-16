@@ -41,7 +41,7 @@ CSRF_COOKIE_SECURE = True
 X_FRAME_OPTIONS = 'DENY'
 
 ALLOWED_HOSTS = [
-    'muestreo1-60zl5v93.b4a.run',
+    'mediciones-fuvoftay.b4a.run',
     'localhost',
     '127.0.0.1',
     '*.containers.back4app.com',
